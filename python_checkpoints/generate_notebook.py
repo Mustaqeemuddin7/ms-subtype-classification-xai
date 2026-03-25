@@ -110,7 +110,7 @@ We load the dataset and perform a comprehensive initial inspection covering:
 - **Class distribution** — assess balance across MS subtypes"""))
 
 cells.append(code("""# Load dataset
-df = pd.read_csv('ms_dataset.csv')
+df = pd.read_csv('../datasets/ms_dataset.csv')
 
 print(f"Dataset shape: {df.shape[0]} samples × {df.shape[1]} features")
 print("\\n" + "="*60)

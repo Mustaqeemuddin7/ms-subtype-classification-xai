@@ -86,7 +86,7 @@ cells.append(md("""## 3. Data Preparation and Model Training
 We use the same preprocessing and XGBoost model as the baseline and SHAP notebooks."""))
 
 cells.append(code("""# Load data
-df = pd.read_csv('ms_dataset.csv')
+df = pd.read_csv('../datasets/ms_dataset.csv')
 feature_cols = [c for c in df.columns if c != 'subtype']
 X = df[feature_cols]
 y = df['subtype']

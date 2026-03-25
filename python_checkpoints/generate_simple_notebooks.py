@@ -63,7 +63,7 @@ print("All libraries loaded successfully!")""")
 def eda_cells():
     return [
         md("## 2. Loading the Dataset\n\nWe load the CSV file and take a quick look at its shape and first few rows."),
-        code("""df = pd.read_csv('ms_dataset.csv')
+        code("""df = pd.read_csv('../datasets/ms_dataset.csv')
 print(f"Rows: {df.shape[0]}, Columns: {df.shape[1]}")
 df.head()"""),
 
